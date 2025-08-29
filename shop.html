@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serene • Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+  <img src="images/logo.jpg" alt="Serene Logo" style="height:40px;" />
+</a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart 🛒 <span id="nav-cart-count">0</span></a>
+        <a href="payment.html">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" data-animate>
+    <div class="container">
+      <h1 class="section-title">Our Collection</h1>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search products..." />
+        <select id="sort">
+          <option value="">Sort by</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="new">Newest</option>
+        </select>
+      </div>
+      <div class="grid products" id="shop-products"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 CosmoGlow.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

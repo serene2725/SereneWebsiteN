@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serene • Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+  <img src="images/logo.jpg" alt="Serene Logo" style="height:40px;" />
+</a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a class="active" href="cart.html">Cart 🛒 <span id="nav-cart-count">0</span></a>
+        <a href="payment.html">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" data-animate>
+    <div class="container">
+      <h1 class="section-title">Your Cart</h1>
+      <div id="cart-empty" class="empty hidden">Your cart is empty. <a href="shop.html">Go to shop</a></div>
+      <div id="cart-list" class="cart-list"></div>
+      <div id="cart-summary" class="cart-summary hidden">
+        <div class="line"><span>Subtotal</span><span>₹ <span id="subtotal">0</span></span></div>
+        <div class="line"><span>Shipping</span><span>₹ <span id="shipping">0</span></span></div>
+        <div class="line total"><span>Total</span><span>₹ <span id="total">0</span></span></div>
+        <div class="actions">
+          <a href="payment.html" class="btn btn-primary">Proceed to Payment</a>
+          <button class="btn btn-ghost" id="clear-cart">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Serene.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

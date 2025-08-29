@@ -1,0 +1,76 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Serene • Payment</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+  <img src="images/logo.jpg" alt="Serene Logo" style="height:40px;" />
+</a>
+
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart 🛒 <span id="nav-cart-count">0</span></a>
+          <a class="active" href="payment.html">Payment</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section" data-animate>
+      <div class="container">
+        <h1 class="section-title">Payment Options</h1>
+
+        <div class="grid pay-grid">
+          <div class="card pay-box">
+            <h3>📱 UPI</h3>
+            <img src="images/upi-qr.png" alt="UPI QR" class="qr" />
+            <p><strong>UPI ID:</strong> <span id="upi-id">aditimagar79-1@okicici</span></p>
+            <div class="actions">
+              <button class="btn btn-ghost" id="copy-upi">Copy UPI ID</button>
+            </div>
+          </div>
+
+          <div class="card pay-box">
+            <h3>🏦 Bank Transfer</h3>
+            <p><strong>Bank:</strong>SBI Bank</p>
+            <p><strong>Account No:</strong> 43221867031</p>
+            <p><strong>IFSC:</strong> SBIN0015664 </p>
+            <p><strong>Account Name:</strong> Aditi Vithal Magar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- 🔗 Google Form Link -->
+      <div style="text-align:center; margin-top:40px;">
+        <a href="https://forms.gle/7DtTvy553jBvt1Z86" 
+           target="_blank" 
+           class="btn btn-primary">
+          Fill Order Details Form
+        </a>
+        <p class="muted" style="margin-top:10px;">
+          After completing payment, please click above to share your shipping details.
+        </p>
+      </div>
+      <!-- End Google Form Link -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 CosmoGlow.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <!-- EmailJS (no backend needed). Replace placeholders in script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
